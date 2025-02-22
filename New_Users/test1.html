@@ -1,0 +1,62 @@
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;  /* Permite el salto de línea cuando los elementos no caben */
+  width: 100%; /* Asegura que ocupe el 100% del ancho */
+  height: 100vh; /* Usa todo el alto de la ventana */
+  max-width: 215.9mm; /* El ancho de la hoja tamaño carta */
+  max-height: 279.4mm; /* El alto de la hoja tamaño carta */
+}
+
+.item {
+  flex: 1 0 45%; /* Cada item ocupa el 45% del ancho del contenedor, con un espacio de margen entre ellos */
+  margin: 10px; /* Espaciado entre los elementos */
+  height: 100px; /* Altura de cada elemento */
+  background-color: lightblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    flex: 1 0 100%; /* En pantallas pequeñas, cada elemento ocupa todo el ancho */
+  }
+}
+
+</style>
+
+
+<div class="contenedor">
+  <div class="item">Elemento 1</div>
+  <div class="item">Elemento 2</div>
+  <div class="item">Elemento 3</div>
+  <div class="item">Elemento 4</div>
+  <div class="item">Elemento 5</div>
+  <div class="item">Elemento 6</div>
+  <div class="item">Elemento 7</div>
+  <div class="item">Elemento 8</div>
+</div>
+<div class="contenedor">
+  <div class="item">Elemento 1</div>
+  <div class="item">Elemento 2</div>
+  <div class="item">Elemento 3</div>
+  <div class="item">Elemento 4</div>
+  <div class="item">Elemento 5</div>
+  <div class="item">Elemento 6</div>
+  <div class="item">Elemento 7</div>
+  <div class="item">Elemento 8</div>
+</div>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Gran Diseño</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            width: 100px;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 5px 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        td {
+            color: #333;
+        }
+
+        /* Estilo de las celdas cuando están seleccionadas */
+        td.selected {
+            background-color: #90EE90;
+        }
+
+        /* Estilo de la tabla en pantalla pequeña */
+        @media screen and (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+        }
+
+        /* Agregar una línea de separación en la parte superior */
+        table::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #ddd;
+        }
+
+        table img {
+            width: 60px;
+        }
+
+        .img_icon{
+            text-align: center;
+        }
+
+        .img_icon img {
+            margin-top: 10px;
+        }
+
+        .header_time {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .contenedor {
+  display: flex;
+  flex-wrap: wrap;  /* Permite el salto de línea cuando los elementos no caben */
+  width: 100%; /* Asegura que ocupe el 100% del ancho */
+  height: 100vh; /* Usa todo el alto de la ventana */
+  max-width: 215.9mm; /* El ancho de la hoja tamaño carta */
+  max-height: 279.4mm; /* El alto de la hoja tamaño carta */
+}
+
+.item {
+  flex: 1 0 45%; /* Cada item ocupa el 45% del ancho del contenedor, con un espacio de margen entre ellos */
+  margin: 10px; /* Espaciado entre los elementos */
+  height: 100px; /* Altura de cada elemento */
+}
+
+
+
+    </style>
+</head>
+<body class="contenedor">
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="item">
+        <thead>
+            <tr>
+                <th class="header_time">30 MINUTOS</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img_icon">
+                    <span><strong> Papeleria Gaby </strong> </span>
+                    <span> <img src="icon.png"> </span>
+                </td>
+                <td>mi usuario es</td>
+                <td>mi contraseña</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
