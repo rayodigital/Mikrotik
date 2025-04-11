@@ -6,8 +6,10 @@ import connectionToMikrotik
 def generar_usuario_y_contrasena():
     # Generar un nombre de usuario aleatorio
     usuario = ''.join(random.choices(string.ascii_lowercase, k=5))
-    # Generar una contraseña aleatoria
-    contrasena = ''.join(random.choices(string.ascii_letters + string.digits, k=5))
+    # Generar una contraseña aleatoria - solo letras minusculas
+    contrasena = ''.join(random.choices(string.ascii_lowercase + string.digits, k=5))
+    # letras mayusculas y minusculas
+    #contrasena = ''.join(random.choices(string.ascii_letters + string.digits, k=5))
     print("Usuario: {} => Contraseña: {}".format(usuario,contrasena))
 
     # test
